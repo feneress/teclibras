@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário - TecLibras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/glossario.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-book" id="nav_logo"> TecLibras</i>
+            <ul id="nav_list">
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item active"><a href="/src/html/glossario.html">Glossário</a></li>
+                <li class="nav-item"><a href="/src/html/quizzes.html">Quizzes</a></li>
+            </ul>
+            
+            <a href="/src/html/login.html" id="btn_entrar"><button class="btn">Entrar</button></a>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item active"><a href="/src/html/glossario.html">Glossário</a></li>
+                <li class="nav-item"><a href="/src/html/quizzes.html">Quizzes</a></li>
+            </ul>
+            <a href="/src/html/login.html" id="mobile_login"><button class="btn">Entrar</button></a>
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="glossario">
+            <h1>Categoria de Sinais</h1>
+            <div class="catalogo-container">
+                <div class="catalogo-item">
+                    <a href="/src/html/hardware.html" class="catalogo-link">
+                        <div class="clickable-card"></div>
+                        <img src="/src/images/hardwareimg.avif" alt="Hardware">
+                        <h3>Sinais: Hardware</h3>
+                    </a>
+                </div>
+                <div class="catalogo-item">
+                    <a href="/src/html/software.html" class="catalogo-link">
+                        <div class="clickable-card"></div>
+                        <img src="/src/images/softwareimg.avif" alt="Software">
+                        <h3>Sinais: Software</h3>
+                    </a>
+                </div>
+                <div class="catalogo-item">
+                    <a href="/src/html/redes.html" class="catalogo-link">
+                        <div class="clickable-card"></div>
+                        <img src="/src/images/redesimg.avif" alt="Redes e Internet">
+                        <h3>Sinais: Redes e Internet</h3>
+                    </a>
+                </div>
+                <div class="catalogo-item">
+                    <a href="/src/html/desenv.html" class="catalogo-link">
+                        <div class="clickable-card"></div>
+                        <img src="/src/images/desenvimg.avif" alt="Desenvolvimento de Software">
+                        <h3>Sinais: Desenvolvimento de Software</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/src/javascript/displaybtn.js"></script>
+</body>
+</html>

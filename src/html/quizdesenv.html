@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Desenvolvimento de Software</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/quiz.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-book" id="nav_logo"> TecLibras</i>
+            <ul id="nav_list">
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item"><a href="/src/html/glossario.html">Glossário</a></li>
+                <li class="nav-item active"><a href="/src/html/quizzes.html">Quizzes</a></li>
+            </ul>
+            
+            <a href="/src/html/login.html" id="btn_entrar"><button class="btn">Entrar</button></a>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item"><a href="/src/html/glossario.html">Glossário</a></li>
+                <li class="nav-item active"><a href="/src/html/quizzes.html">Quizzes</a></li>
+            </ul>
+            <a href="/src/html/login.html" id="mobile_login"><button class="btn">Entrar</button></a>
+        </div>
+    </header>
+
+    <main id="quizzes-container">
+        <div class="questao">
+            <p>1. O que é um Algoritmo?</p>
+            <button onclick="conferirResposta(this, false)">Dispositivo que encaminha pacotes de dados entre redes</button>
+            <button onclick="conferirResposta(this, false)">Dispositivo de armazenamento de dados</button>
+            <button onclick="conferirResposta(this, true)">Sequência de passos para resolver um problema</button>
+            <button onclick="conferirResposta(this, false)">Dispositivo que monitora o tráfego da internet</button>
+        </div>
+    
+        <div class="questao">
+            <p>2. Que sinal é esse?</p>
+            <video autoplay loop>
+                <source src="/src/images/bancodedados.mp4" type="video/mp4">
+            </video>
+            <button onclick="conferirResposta(this, false)">IP</button>
+            <button onclick="conferirResposta(this, false)">Browser</button>
+            <button onclick="conferirResposta(this, false)">Firewall</button>
+            <button onclick="conferirResposta(this, true)">Banco de Dados</button>
+        </div>
+    </main>
+
+    <script src="/src/javascript/quiz.js"></script>
+    <script src="/src/javascript/script.js"></script>
+    <script src="/src/javascript/displaybtn.js"></script>
+</body>
+</html>

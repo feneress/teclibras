@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS bdlibras;
+
+USE bdlibras;
+
+CREATE TABLE IF NOT EXISTS usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    tipo ENUM('adm') NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS sinais (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    categoria VARCHAR(100),
+    explicacao TEXT NOT NULL,
+    descricao TEXT,
+    video_url LONGBLOB
+);
+
+CREATE TABLE IF NOT EXISTS sugestao (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    categoria VARCHAR(100),
+    nome VARCHAR(255) NOT NULL
+);

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles/login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <title>Login</title>
+</head>
+<body class="main-login">
+    <div class="left-login">
+        <div class="content-left">
+            <div id="botao_sair">
+                <a href="/index.html">
+                    <i class="fa fa-sign-out-alt"></i>
+                </a>
+            </div>
+            <h1>Bem-vindo!</h1>
+            <p>Descubra sobre diversos termos em LIBRAS!</p>
+            <img src="/src/images/librasboasvindas.avif" class="left-img" alt="Imagem de boas-vindas">
+        </div>
+    </div>
+
+    <div class="right-login">
+        <div class="card-login">
+            <form id="loginForm">
+                <h1 id="login_text">Login</h1> 
+
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="usuario_nome" name="user" placeholder="Usuário ou Email" required> 
+                </div>
+
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Exemplo: 1234" required> 
+                </div>
+
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            
+        </div>
+    </div>
+
+    <script src="/src/javascript/login.js"></script>
+    <script src="/src/javascript/displaybtn.js"></script>
+</body>
+</html>

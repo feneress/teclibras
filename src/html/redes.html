@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário - TecLibras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/categoria.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-book" id="nav_logo"> TecLibras</i>
+            <ul id="nav_list">
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item active"><a href="/src/html/glossario.html">Glossário</a></li>
+                <li class="nav-item"><a href="/src/html/quizzes.html">Quizzes</a></li>
+            </ul>
+            
+            <a href="/src/html/login.html" id="btn_entrar"><button class="btn">Entrar</button></a>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="/index.html">Início</a></li>
+                <li class="nav-item active"><a href="/src/html/glossario.html">Glossário</a></li>
+                <li class="nav-item"><a href="/src/html/quizzes.html">Quizzes</a></li>
+            </ul>
+            <a href="/src/html/login.html" id="mobile_login"><button class="btn">Entrar</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="sessao-glossario">
+            <h1 class="titulo-glossario">Lista de Sinais - Redes</h1>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="Pesquisar Sinal">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="listagem-sinais">
+            <div class="categoria-3-list">
+                Carregando Sinais...
+            </div>
+            </div>
+            <div id="modalEditar" class="modal-editar">
+                <div class="modal-conteudo-editar">
+                    <span id="fecharModalBtn" class="fechar-editar">&times;</span>
+                    <h3>Adicionar Sinal</h3>
+            
+                    <label for="nomeSinal">Nome:</label>
+                    <input type="text" id="nomeSinal" placeholder="Sinal">
+            
+                    <label for="explicacao">Explicação:</label>
+                    <input type="text" id="explicacao" placeholder="O que é">
+            
+                    <label for="descricao">Descrição:</label>
+                    <input type="text" id="descricao" placeholder="Descrição do sinal">
+
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="hardware">Hardware</option>
+                        <option value="software">Software</option>
+                        <option value="redes">Redes e Internet</option>
+                        <option value="desenv">Desenvolvimento de Software</option>
+                    </select>
+
+                    <label for="video">Vídeo:</label>
+                    <div id="videoContainer">
+                        <input type="file" id="video" accept="video/*">
+                    </div>
+
+                    <div class="modal-buttons-editar">
+                        <button id="cancelarBtn" class="btn-cancelar">Cancelar</button>
+                        <button id="enviarBtn" class="btn-enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="btn-flutuante" id="btn_adicionar">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </main>
+    <script src="/src/javascript/modalAdm.js"></script>
+    <script src="/src/javascript/search.js"></script>
+    <script src="/src/javascript/script.js"></script>
+    <script src="/src/javascript/adicionarvideo.js"></script>
+    <script src="/src/javascript/displaybtn.js"></script>
+</body>
+</html>
